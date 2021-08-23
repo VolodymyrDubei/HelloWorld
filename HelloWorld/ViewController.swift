@@ -16,11 +16,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        helloBobLabel.isHidden = true
+        helloBobLabel.textColor = .systemYellow
+        showTextButton.layer.cornerRadius = 10
         
     }
 
     @IBAction func showTextButtonPressed() {
+        helloBobLabel.isHidden.toggle()
+        
+        if helloBobLabel.isHidden {
+            showTextButton.setTitle("Show Text", for: .normal)
+        } else {
+            showTextButton.setTitle("Hide Text", for: .normal)
+        }
     }
     
     
