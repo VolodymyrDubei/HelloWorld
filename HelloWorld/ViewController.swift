@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         helloBobLabel.isHidden = true
-        helloBobLabel.textColor = .systemYellow
+        helloBobLabel.textColor = .yellow
         showTextButton.layer.cornerRadius = 10
         
     }
